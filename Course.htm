@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Второе практическое задание</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: aliceblue;
+            font-family: 'Overused Grotesk';
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            background-color: cadetblue;
+            justify-content: space-between;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        header .search {
+            display: flex;
+            justify-content: flex-end;
+            width: 12%;
+            height: 100%;
+            background-color: white;
+            padding: 2px;
+            margin: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: lightblue;
+            justify-content: space-around;
+        }
+
+        nav a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            display: flex;
+            width: 100%;
+            height: 340px;
+        }
+
+        .banner img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 15px 20px;
+            background-color: gray;
+        }
+
+        article section {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            padding: 10px;
+            width: 45%;
+            background-color: lightgray;
+        }
+
+        section img {
+            width: 150px;
+            height: 150px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        section h4 {
+            margin: 0px;
+        }
+
+        section .info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .shop {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 10px 5px;
+            background-color: plum;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+            margin: 5px;
+            padding: 10px;
+            background-color: lavender;
+        }
+
+        .card img {
+            width: 280px;
+            height: 280px;
+            margin: 5px;
+        }
+
+        .card h3 {
+            margin: 0px;
+        }
+
+        .card h2 {
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            background-color: cadetblue;
+            justify-content: space-between;
+        }
+
+            footer div {
+                margin: 10px;
+            }
+
+        @media (max-width: 700px) {
+            article section {
+                width: 70%;
+            }
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <h2>🌸</h2>
+        <h2>Modern books</h2>
+        <div class="search">
+            <div>🔍</div>
+        </div>
+        
+    </header>
+    <nav>
+        <a href="#">КНИГИ</a>
+        <a href="#">АВТОРЫ</a>
+        <a href="#">ЖУРНАЛ</a>
+        <a href="#">О НАС</a>
+    </nav>
+
+    <div class="banner">
+        <img src="https://i.pinimg.com/736x/ba/47/1b/ba471b2e4d20fd0736330185faee8abc.jpg">
+    </div>
+
+    <article>
+        <section>
+            <img src="https://images.unsplash.com/photo-1743075281082-05360a6fb1b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTEwNjR8&ixlib=rb-4.0.3&q=85" />
+            <info>
+                <h4>Цветы</h4>
+                <div>Украшают мир вокруг себя </div>
+            </info>
+        </section>
+        <section>
+            <img src="https://images.unsplash.com/photo-1744855232429-acacce6e0922?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTE1ODh8&ixlib=rb-4.0.3&q=85" />
+            <info>
+                <h4>Книги</h4>
+                <div>Лучший подарок</div>
+            </info>
+        </section>
+    </article>
+
+    <div class="shop">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1740188305229-63c68ef04712?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTQ0NTN8&ixlib=rb-4.0.3&q=85">
+            <h3>1200</h3>
+            <h2>Уход за собаками</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1742155032253-744e8adaafc8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTUwNTB8&ixlib=rb-4.0.3&q=85">
+            <h3>800</h3>
+            <h2>Кратеры</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1743160661846-e9c9b8b88cbe?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTUwMjR8&ixlib=rb-4.0.3&q=85">
+            <h3>1500</h3>
+            <h2>Однажды сломанное сердце</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDU2OTUxMjh8&ixlib=rb-4.0.3&q=85">
+            <h3>1000</h3>
+            <h2>О книгах</h2>
+        </div>
+    </div>
+
+    <footer>
+        <div>2025, Ульяна</div>
+    </footer>
+
+</body>
+</html>
